@@ -142,7 +142,7 @@ public class SampleProducer {
 
 		// This kills the child process and shuts down the threads managing it.
 		producer.destroy();
-		log.info("EXECUTOR.isShutdown(): {}", EXECUTOR.isShutdown());
+		callbackThreadPool.shutdown();
 		log.info("Finished.");
 	}
 
