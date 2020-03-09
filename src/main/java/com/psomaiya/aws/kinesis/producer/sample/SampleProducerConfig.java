@@ -202,6 +202,7 @@ public class SampleProducerConfig {
 		config.setAggregationEnabled(this.isAggregationEnabled());
 		config.setAggregationMaxCount(this.getAggregationMaxCount());
 		config.setAggregationMaxSize(this.getAggregationMaxSize());
+		config.setRecordTtl(120000);
 
 		// If you have built the native binary yourself, you can point the Java
 		// wrapper to it with the NativeExecutable option. If you want to pass
